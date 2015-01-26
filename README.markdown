@@ -1,16 +1,18 @@
 
 
-## Usage 
-
-### In Node.js and Browserify
+## reduce 
 
 Install from npm
 
-    npm install underscore.string
+    _.reduce = function(obj, memo, iterator, context) {
+    if (obj && obj.reduce) return obj.reduce(_.bind(iterator, context), memo);
+    _.each(obj, function(value, index, list) {
+      memo = iterator.call(context, memo, value, index, list);
+    });
+      return memo;
+    };
 
-Require individual functions
-
-    npm install underscore.string
+    
 
 
 ```javascript
