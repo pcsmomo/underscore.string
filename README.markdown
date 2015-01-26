@@ -13,7 +13,6 @@ Require individual functions
     npm install underscore.string
 
 
-
 ```javascript
 var slugify = require("underscore.string/slugify");
 
