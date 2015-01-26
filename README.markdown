@@ -2,8 +2,11 @@
 
 ## reduce 
 
+### memo값에 주입
+
 Install from npm
 
+```javascript
     _.reduce = function(obj, memo, iterator, context) {
     if (obj && obj.reduce) return obj.reduce(_.bind(iterator, context), memo);
     _.each(obj, function(value, index, list) {
@@ -11,8 +14,7 @@ Install from npm
     });
       return memo;
     };
-
-    
+```
 
 
 ```javascript
