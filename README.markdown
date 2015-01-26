@@ -9,7 +9,10 @@ Install from npm
     npm install underscore.string
 
 Require individual functions
+
     npm install underscore.string
+
+
 
 ```javascript
 var slugify = require("underscore.string/slugify");
