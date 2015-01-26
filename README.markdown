@@ -18,21 +18,7 @@ Install from npm
 
 
 
-## reduce 
 
-### memo값에 주입
-
-Install from npm
-
-```javascript
-    _.reduce = function(obj, memo, iterator, context) {
-    if (obj && obj.reduce) return obj.reduce(_.bind(iterator, context), memo);
-    _.each(obj, function(value, index, list) {
-      memo = iterator.call(context, memo, value, index, list);
-    });
-      return memo;
-    };
-```
 
 ## reduce 
 
@@ -50,6 +36,10 @@ Install from npm
     };
 ```
 
+
+
+
+
 ## reduce 
 
 ### memo값에 주입
@@ -65,6 +55,30 @@ Install from npm
       return memo;
     };
 ```
+
+
+
+
+
+## reduce 
+
+### memo값에 주입
+
+Install from npm
+
+```javascript
+    _.reduce = function(obj, memo, iterator, context) {
+    if (obj && obj.reduce) return obj.reduce(_.bind(iterator, context), memo);
+    _.each(obj, function(value, index, list) {
+      memo = iterator.call(context, memo, value, index, list);
+    });
+      return memo;
+    };
+```
+
+
+
+
 
 ## reduce 
 
