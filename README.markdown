@@ -17,12 +17,96 @@ Install from npm
 ```
 
 
-```javascript
-var slugify = require("underscore.string/slugify");
 
-slugify("Hello world!")
-// => hello-world
+## reduce 
+
+### memo값에 주입
+
+Install from npm
+
+```javascript
+    _.reduce = function(obj, memo, iterator, context) {
+    if (obj && obj.reduce) return obj.reduce(_.bind(iterator, context), memo);
+    _.each(obj, function(value, index, list) {
+      memo = iterator.call(context, memo, value, index, list);
+    });
+      return memo;
+    };
 ```
+
+## reduce 
+
+### memo값에 주입
+
+Install from npm
+
+```javascript
+    _.reduce = function(obj, memo, iterator, context) {
+    if (obj && obj.reduce) return obj.reduce(_.bind(iterator, context), memo);
+    _.each(obj, function(value, index, list) {
+      memo = iterator.call(context, memo, value, index, list);
+    });
+      return memo;
+    };
+```
+
+## reduce 
+
+### memo값에 주입
+
+Install from npm
+
+```javascript
+    _.reduce = function(obj, memo, iterator, context) {
+    if (obj && obj.reduce) return obj.reduce(_.bind(iterator, context), memo);
+    _.each(obj, function(value, index, list) {
+      memo = iterator.call(context, memo, value, index, list);
+    });
+      return memo;
+    };
+```
+
+## reduce 
+
+### memo값에 주입
+
+Install from npm
+
+```javascript
+    _.reduce = function(obj, memo, iterator, context) {
+    if (obj && obj.reduce) return obj.reduce(_.bind(iterator, context), memo);
+    _.each(obj, function(value, index, list) {
+      memo = iterator.call(context, memo, value, index, list);
+    });
+      return memo;
+    };
+```
+
+## reduce 
+
+### memo값에 주입
+
+Install from npm
+
+```javascript
+    _.reduce = function(obj, memo, iterator, context) {
+    if (obj && obj.reduce) return obj.reduce(_.bind(iterator, context), memo);
+    _.each(obj, function(value, index, list) {
+      memo = iterator.call(context, memo, value, index, list);
+    });
+      return memo;
+    };
+```
+
+
+
+
+
+
+
+
+
+
 
 or load the full library to enable chaining
 
